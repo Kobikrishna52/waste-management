@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Shops List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        input {
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Plastic Shops</h1>
+    <input type="text" id="searchInput" oninput="searchShops()" placeholder="Search by location">
+    <ul id="shopList">
+        <!-- Dummy shop information -->
+        <li data-location="Cityville">
+            <strong>Shop Name:</strong> PlasticMart
+            <br>
+            <strong>Address:</strong> 123 Main Street
+            <br>
+            <strong>Location:</strong> Cityville
+            <br>
+            <strong>Working Hours:</strong> 9:00 AM - 6:00 PM
+        </li>
+        <li data-location="Suburbville">
+            <strong>Shop Name:</strong> EcoPlastics
+            <br>
+            <strong>Address:</strong> 789 Oak Avenue
+            <br>
+            <strong>Location:</strong> Suburbville
+            <br>
+            <strong>Working Hours:</strong> 10:00 AM - 5:00 PM
+        </li>
+        <li data-location="Townsville">
+            <strong>Shop Name:</strong> GreenRecycle
+            <br>
+            <strong>Address:</strong> 456 Pine Street
+            <br>
+            <strong>Location:</strong> Townsville
+            <br>
+            <strong>Working Hours:</strong> 8:00 AM - 4:00 PM
+        </li>
+        <!-- Add more dummy shop information as needed -->
+    </ul>
+    <script src="plasticlist.js"></script>
+
+</body>
+</html>
